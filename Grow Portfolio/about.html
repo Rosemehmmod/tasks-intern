@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+.heading h1{
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    position: relative;
+}
+.heading h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+}
+
+.heading p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+    margin-top: 0;
+
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+    background-image: linear-gradient(
+        -45deg, rgb(56, 195, 250) , rgb(235, 20, 206)
+        );
+        color: #fff;
+}
+
+    </style>.
+</head>
+<body>
+    <div class="heading">
+        <h1>About Me</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus debitis possimus fugiat ab culpa minima autem asperiores error quis ad.</p>
+    </div>
+
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="./a.jpg" >
+            </div>
+            <div class="about-content">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque perspiciatis nulla saepe provident sint! Voluptate repellat aspernatur voluptatibus ab repudiandae. Autem impedit vitae, consectetur ipsa illum nemo magnam, commodi eveniet adipisci, ut amet. Iure et aperiam non nesciunt debitis repudiandae quis illo molestiae animi? Nulla voluptas, odio tempora expedita iste harum consequatur id autem ipsa magnam dolore, similique ab reprehenderit!</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

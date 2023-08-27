@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+
+
+.projects{
+    padding-bottom: 10rem;
+
+}
+.heading {
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    position: relative;
+}
+.heading  ::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+}
+.p1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+
+}
+
+.projects{
+    padding-bottom: 10rem;
+
+}
+
+.projects .projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+
+}
+.projects-container .projects-box{
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+.projects-box img{
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+.projects-box:hover img{
+    transform: scale(1.1);
+}
+.projects-box img{
+    width: 100%;
+    height: 100%;
+}
+.projects-box .projects-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.315), blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4rem ;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.projects-box:hover .projects-layer{
+    opacity: 1;
+}
+.projects-layer h4{
+font-size: 2rem;
+}
+.projects-layer p{
+    font-size: 1rem;
+    margin:-.3rem 0 2rem ;
+}
+.projects-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--white-color);
+    border-radius: 50%;
+
+}
+
+.projects-layer a i{
+    font-size: 2rem;
+     color:white;
+     text-align: center;
+     justify-content: center;
+}
+.read-more{
+    text-align: center;
+    justify-content: center;
+}
+.read-more{
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-left: 44%;
+    transition: 0.3s ease;
+}
+ .read-more:hover{
+    background-image: linear-gradient(
+        -45deg, rgb(56, 195, 250) , rgb(235, 20, 206)
+        );
+        color: #fff;
+}
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+
+<!-- Projects section -->
+<section class="projects" id="projects">
+    <h2 class="heading">Latest Projects</h2>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aliquam.</p>
+
+    <div class="projects-container">
+        <div class="projects-box">
+            <img src="./p1.jpg" alt="">
+<div class="projects-layer">
+    <h4>Web Designing</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa temporibus similique asperiores dolor vero esse!</p>
+    <a href="#"><i class='bx bx-link-external' ></i></a>
+</div>
+        </div>
+
+        <div class="projects-box">
+            <img src="./p2.jpg" alt="">
+<div class="projects-layer">
+    <h4>Web Designing</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa temporibus similique asperiores dolor vero esse!</p>
+    <a href="#"><i class='bx bx-link-external' ></i></a>
+</div>
+        </div>
+
+        <div class="projects-box">
+            <img src="./p3.jpg" alt="">
+<div class="projects-layer">
+    <h4>Web Designing</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa temporibus similique asperiores dolor vero esse!</p>
+    <a href="#"><i class='bx bx-link-external' ></i></a>
+</div>
+        </div>
+
+        <div class="projects-box">
+            <img src="./p4.jpg" alt="">
+<div class="projects-layer">
+    <h4>Web Designing</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa temporibus similique asperiores dolor vero esse!</p>
+    <a href="#"><i class='bx bx-link-external' ></i></a>
+</div>
+        </div>
+
+        <div class="projects-box">
+            <img src="./p5.jpg" alt="">
+<div class="projects-layer">
+    <h4>Web Designing</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa temporibus similique asperiores dolor vero esse!</p>
+    <a href="#"><i class='bx bx-link-external' ></i></a>
+</div>
+        </div>
+
+        <div class="projects-box">
+            <img src="./p6.jpg" alt="">
+<div class="projects-layer">
+    <h4>Web Designing</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa temporibus similique asperiores dolor vero esse!</p>
+    <a href="#"><i class='bx bx-link-external' ></i></a>
+</div>
+        </div>
+    </div>
+    <a href="#" class="read-more">MORE PROJECTS</a>
+</section>
+
+</body>
+</html>
